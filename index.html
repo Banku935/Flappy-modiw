@@ -251,7 +251,7 @@
             }
 
             // Spawn Pipes
-            if (frames % Math.floor(pipeSpawnRate / (speed/2)) === 0) {
+            if (frames % pipeSpawnRate === 0)
                 // Calculate random height for top pipe
                 // Ensure min top pipe length and min bottom pipe length
                 const minPipeLen = 50;
